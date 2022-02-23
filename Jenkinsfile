@@ -1,13 +1,18 @@
 pipeline {
-agent any
+  
+ agent any 
+  
   tools {
-  maven'mvn'
-    jdk'jdk'
+    maven 'mvn'
+    jdk 'jdk'
   }
   stages {
-    stage('build')
+  
+    stage ('Build') {
       steps {
-      }
-    } 
-  }
-
+        sh 'mvn clean'
+        sh 'mvn install'
+       }
+     }
+   }
+}
