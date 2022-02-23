@@ -6,7 +6,7 @@ agent any
     jdk'jdk'
   }
   stages {
-    stage('build'){
+    stage('build')
       steps {
       }
     } 
