@@ -1,13 +1,13 @@
 
-pipeline{
+pipeline {
 agent any
-  tools{
+  tools {
   maven'mvn'
     jdk'jdk'
   }
-  stages{
+  stages {
     stage('build'){
-      steps{
+      steps {
       }
     } 
   }
